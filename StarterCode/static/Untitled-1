@@ -1,0 +1,30 @@
+var ufos = data;
+var tbody= d3.select("tbody");
+var button = d3.select("#button_one");
+function capitalize(string) {
+ return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function allFilter() {
+ var dateInput = d3.select("#date-input").property("value");
+ var cityInput = d3.select("#city-input").property("value");
+ var stateInput = d3.select("#state-input").property("value");
+ var countryInput = d3.select("#country-input").property("value");
+ var shapeInput = d3.select("#shape-input").property("value");
+ var cityInput1=cityInput.toString().toLowerCase();
+ var stateInput1=stateInput.toString().toLowerCase();
+ var countryInput1=countryInput.toString().toLowerCase();
+ var shapeInput1=shapeInput.toString().toLowerCase();
+ var filteredData = ufos.filter(ufo =>
+   ufo.datetime === dateInput &&
+   ufo.city === cityInput1 &&
+   ufo.state === stateInput1 &&
+   ufo.country === countryInput1 &&
+   ufo.shape === shapeInput1);
+ d3.event.preventDefault();
+ filteredData.forEach((data) => {
+   var row=tbody.append("tr");
+   Object.entries(data).forEach(([key, value]) => {
+     var cell=row.append("td");
+     var value_data= capitalize(value)
+     cell.text(value_data);})})};
+button.on("click", allFilter);
