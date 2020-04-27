@@ -11,9 +11,9 @@ For this project, I created a table imbedded in a website that will dynamically 
 
 * Used a date form in my HTML document and wrote JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-![mission_to_mars](Images/mission_to_mars.png)
+![Screen Shot 1](StarterCode/static/images/Screen Shot 1.png)
 
-![mission_to_mars](Images/mission_to_mars.png)
+![Screen Shot 2](StarterCode/static/images/Screen Shot 2.png)
 - - -
 
 ### Dataset
