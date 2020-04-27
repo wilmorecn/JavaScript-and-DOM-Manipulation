@@ -3,7 +3,7 @@
 For this project, I created a table imbedded in a website that will dynamically search through a very large dataset to allow users to filter the data for specific values.  I used JavaScript, HTML, CSS, and D3.js for the webpage coding languages.
 
 
-### Level 1: Automatic Table and Date Search (Required)
+### Level 1: Automatic Table and Date Search
 
 * Created a basic HTML web page (index.html).
 
