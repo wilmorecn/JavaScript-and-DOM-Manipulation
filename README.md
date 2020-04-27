@@ -13,7 +13,7 @@ For this project, I created a table imbedded in a website that will dynamically 
 
 ![ScreenShot1](StarterCode/static/images/ScreenShot1.png)
 
-![Screen Shot 2](StarterCode/static/images/Screen Shot 2.png)
+![ScreenShot2](StarterCode/static/images/ScreenShot2.png)
 - - -
 
 ### Dataset
